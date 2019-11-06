@@ -13,6 +13,21 @@ function showSlides() {
   setTimeout(showSlides, 3000);
 }
 
+var slideIndex2 = 0;
+showSlides2();
+
+function showSlides2() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex2++;
+  if (slideIndex2 > slides.length) {slideIndex2 = 1}
+  slides[slideIndex2-1].style.display = "block";
+  setTimeout(showSlides2, 3000);
+}
+
 var pages = ['home', 'work', 'about', 'blog', 'contact'];
 
 function newPage(name) {
