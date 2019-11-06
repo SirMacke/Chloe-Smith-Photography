@@ -331,30 +331,66 @@ html, body
         display: flex
         flex-direction: column
         position: relative
-        width: auto
-        height: 50%
+        width: 50%
+        height: 100%
         left: 100px
-        top: 50%
-        transform: translateY(-50%)
-        border: 1px solid red
+
+        @media(max-width: 800px)
+          left: 50px
+
+        @media(max-width: 500px)
+          left: 25px
 
         h1
-          display: inline-block
           position: relative
           width: auto
+          top: 35%
+          transform: translateY(-50%)
           color: #303030
           font-size: 3em
           text-align: left
           margin: 0px
 
+          @media(max-width: 1800px)
+            top: 30%
+
+          @media(max-width: 1300px)
+            top: 25%
+
+          @media(max-width: 800px)
+            font-size: 2.5em
+
+          @media(max-width: 500px)
+            font-size: 2em
+
+          @media(max-width: 400px)
+            font-size: 1.5em
+
         p
-          display: inline-block
           position: relative
-          width: 65%
+          top: 32.5%
+          width: 75%
           margin: 0px
           color: #303030
           font-size: 1.5em
           text-align: left
+
+          @media(max-width: 1800px)
+            top: 27.5%
+
+          @media(max-width: 1300px)
+            top: 22.5%
+
+          @media(max-width: 800px)
+            width: 85%
+            font-size: 1.25em
+
+          @media(max-width: 500px)
+            width: 100%
+            font-size: 1em
+
+          @media(max-width: 400px)
+            font-size: 0.7em
 
 
   #blog
@@ -367,6 +403,14 @@ html, body
       top: 50%
       transform: translateY(-50%)
 
+      @media(max-width: 800px)
+        left: 25%
+        height: 90%
+        margin: 0px
+
+      @media(max-width: 600px)
+        left: 30%
+
       #blog-posts
         display: grid
         grid-template-columns: 1fr 1fr 1fr
@@ -376,6 +420,16 @@ html, body
         width: 80%
         left: 50%
         transform: translateX(-50%)
+        border: 1px solid red
+
+        @media(max-width: 1800px)
+          height: 425px
+          top: 50%
+          transform: translate(-50%, -50%)
+
+        @media(max-width: 800px)
+          grid-template-columns: 1fr
+          height: 100%
 
         .post
           display: flex
@@ -386,10 +440,22 @@ html, body
           left: 50%
           transform: translateX(-50%)
 
+          @media(max-width: 1200px)
+            width: 85%
+
+          @media(max-width: 800px)
+            width: 75%
+
+          @media(max-width: 600px)
+            width: 85%
+
           img
             height: 175px
             width: 100%
             object-fit: cover
+
+            @media(max-width: 800px)
+              height: 125px
 
           h3
             position: relative
@@ -400,6 +466,12 @@ html, body
             font-size: 1em
             margin: 5px 0px
 
+            @media(max-width: 1400px)
+              font-size: 0.9em
+
+            @media(max-width: 600px)
+              font-size: 0.75em
+
           p
             position: relative
             width: 95%
@@ -409,6 +481,12 @@ html, body
             font-size: 0.8em
             margin: 0px
 
+            @media(max-width: 1400px)
+              font-size: 0.75em
+
+            @media(max-width: 600px)
+              font-size: 0.55em
+
           h5
             position: relative
             width: 95%
@@ -417,6 +495,28 @@ html, body
             color: #303030
             font-size: 0.9em
             margin: 10px 0px 10px 0px
+
+            @media(max-width: 1400px)
+              font-size: 0.85em
+
+            @media(max-width: 600px)
+              font-size: 0.75em
+
+        #post3
+          @media(max-width: 600px)
+            display: none
+
+        #post4
+          @media(max-width: 1800px)
+            display: none
+
+        #post5
+          @media(max-width: 1800px)
+            display: none
+
+        #post6
+          @media(max-width: 1800px)
+            display: none
 
 
   #contact
