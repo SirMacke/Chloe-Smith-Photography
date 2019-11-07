@@ -1,8 +1,8 @@
 *
   box-sizing: border-box
-//   outline: solid #f00 1px !important
-//   background: #000 !important
-//   color: #0f0 !important
+  // outline: solid #f00 1px !important
+  // background: #000 !important
+  // color: #0f0 !important
 
 
 html, body
@@ -332,7 +332,8 @@ html, body
         flex-direction: column
         position: relative
         width: 50%
-        height: 100%
+        height: auto
+        margin: auto 0
         left: 100px
 
         @media(max-width: 800px)
@@ -344,8 +345,7 @@ html, body
         h1
           position: relative
           width: auto
-          top: 35%
-          transform: translateY(-50%)
+          top: 10px
           color: #303030
           font-size: 3em
           text-align: left
@@ -409,6 +409,7 @@ html, body
         margin: 0px
 
       @media(max-width: 600px)
+        height: 50%
         left: 30%
 
       #blog-posts
@@ -420,7 +421,6 @@ html, body
         width: 80%
         left: 50%
         transform: translateX(-50%)
-        border: 1px solid red
 
         @media(max-width: 1800px)
           height: 425px
@@ -440,11 +440,12 @@ html, body
           left: 50%
           transform: translateX(-50%)
 
-          @media(max-width: 1200px)
+          @media(max-width: 1800px)
             width: 85%
 
           @media(max-width: 800px)
             width: 75%
+            margin: auto 0
 
           @media(max-width: 600px)
             width: 85%
@@ -501,6 +502,7 @@ html, body
 
             @media(max-width: 600px)
               font-size: 0.75em
+              margin-top: 2.5px
 
         #post3
           @media(max-width: 600px)
@@ -566,34 +568,85 @@ html, body
       height: 100%
       left: 20%
 
+      @media(max-width: 1200px)
+        left: 25%
+
+      @media(max-width: 800px)
+        left: 30%
+        flex-direction: column
+
       form
         display: flex
         flex-direction: column
-        width: 50%
+        position: relative
+        width: auto
+        height: auto
+        margin: auto
+
+        @media(max-width: 800px)
+          position: absolute
+          width: 70%
+          height: 50%
+          left: 50px
 
         h1
+          display: inline-block
           position: relative
           width: 450px
-          left: 150px
-          margin: 275px 0px 25px 5px
+          margin: 25px 0px 0px 5px
           color: white
           font-size: 3em
 
+          @media(max-width: 1200px)
+            font-size: 2.5em
+
+          @media(max-width: 800px)
+            font-size: 2em
+            width: 200px
+            margin-top: 100px
+
+          @media(max-height: 800px)
+            margin-top: 50px
+
+          @media(max-height: 600px)
+            margin-top: 25px
+            font-size: 1.5em
+
+          @media(max-width: 400px)
+            font-size: 1.25em
+            margin-left: 2.5px
+
         input
+          display: inline-block
           position: relative
           height: 50px
           width: 450px
-          left: 150px
           margin-top: 25px
           border: none
           padding: 0px 10px
           font-size: 0.9em
 
+          @media(max-width: 1200px)
+            width: 350px
+
+          @media(max-width: 800px)
+            width: 300px
+            height: 40px
+            font-size: 0.75em
+
+          @media(max-width: 600px)
+            width: 90%
+            height: 35px
+            font-size: 0.65em
+
+          @media(max-width: 400px)
+            height: 30px
+
         #message
+          display: inline-block
           position: relative
           height: 175px
           width: 450px
-          left: 150px
           margin-top: 25px
           border: 1px solid #303030
           padding: 10px
@@ -602,13 +655,58 @@ html, body
           font-size: 1em
           line-height: 25px
 
+          @media(max-width: 1200px)
+            width: 350px
+            height: 125px
+
+          @media(max-width: 800px)
+            width: 300px
+            height: 100px
+            font-size: 0.9em
+
+          @media(max-width: 600px)
+            width: 90%
+            height: 90px
+            font-size: 0.75em
+            line-height: 20px
+
+          @media(max-width: 400px)
+            height: 75px
+            padding: 5px
+
       div
+        position: relative
         height: auto
-        width: 50%
+        width: 40%
+        margin: auto
+
+        @media(max-width: 1600px)
+          width: 30%
+          margin-left: -100px
+
+        @media(max-width: 800px)
+          position: absolute
+          margin-left: 0px
+          left: 50px
+          width: 70%
+          height: 50%
+          top: 50%
 
         p
           position: relative
-          top: 385px
-          width: 55%
+          width: 75%
           font-size: 1em
           color: white
+
+          @media(max-width: 1600px)
+            width: 90%
+            font-size: 0.9em
+
+          @media(max-width: 1200px)
+            font-size: 0.75em
+
+          @media(max-width: 600px)
+            font-size: 0.65em
+
+          @media(max-width: 400px)
+            font-size: 0.5em
